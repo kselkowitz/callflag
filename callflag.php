@@ -84,7 +84,7 @@ if (!isset($token['access_token'])) {
 return $token['access_token'];
 }
 
-function __doCurl($url, $method, $authorization, $query, $postFields, &$http_response)
+function __doCurl($url, $method, $authorization, $query, $postFields, $http_response)
 {
     $start= microtime(true);
     $curl_options = array(
